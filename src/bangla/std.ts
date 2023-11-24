@@ -2,7 +2,7 @@ import { show } from "../main";
 import { speakText } from "../main";
 export const std = {
   ইনপুট(str: string) {
-    return prompt(str);
+    prompt(str);
   },
   লিখি(str: string) {
     show(str);
