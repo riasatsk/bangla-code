@@ -1,8 +1,11 @@
 import { show } from "../main";
 import { speakText } from "../main";
 export const std = {
+  __credits() {
+    show("Riasat Sk");
+  },
   ইনপুট(str: string) {
-    prompt(str);
+    return prompt(str);
   },
   লিখি(str: string) {
     show(str);
