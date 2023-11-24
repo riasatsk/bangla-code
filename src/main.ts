@@ -10,7 +10,11 @@ const clearButton = document.getElementById("clearButton") as HTMLButtonElement;
 
 editor.focus();
 run.addEventListener("click", () => {
-  execute(editor.innerText);
+  try {
+    execute(editor.innerText);
+  } catch (error: any) {
+    show(error.message);
+  }
 });
 
 export function show(str: any) {
