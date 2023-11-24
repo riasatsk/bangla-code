@@ -113,21 +113,6 @@
         selection.removeAllRanges();
         selection.addRange(range);
       }
-      function checkDevice() {
-        // Check if the user is on a mobile device
-        const isMobile =
-          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-            navigator.userAgent
-          );
-
-        // Display a message based on the device type
-        if (isMobile) {
-          document.write("This app only work in laptop/pc");
-        }
-      }
-
-      // Call the function when your page loads
-      checkDevice();
     </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
