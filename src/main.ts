@@ -34,6 +34,6 @@ export function speakText(text: string) {
 clearTerminal.addEventListener("click", () => {
   terminal.innerHTML = "";
 });
-clearButton.addEventListener('click',()=>{
-  editor.textContent = ""
-})
+clearButton.addEventListener("click", () => {
+  editor.textContent = "";
+});
