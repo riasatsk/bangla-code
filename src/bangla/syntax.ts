@@ -13,7 +13,5 @@ export const syntaxMap: syntaxMap = {
   গঠন: "constructor",
   নতুন: "new",
   এই: "this",
-  ইনপুট: "this.ইনপুট",
-  বলো: "this.বলো",
   লুপ: "for",
 };
