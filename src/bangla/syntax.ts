@@ -12,7 +12,6 @@ export const syntaxMap: syntaxMap = {
   ক্লাস: "class",
   গঠন: "constructor",
   নতুন: "new",
-  লিখি: "this.লিখি",
   এই: "this",
   ইনপুট: "this.ইনপুট",
   বলো: "this.বলো",

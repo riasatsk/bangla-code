@@ -23,18 +23,6 @@ export function show(str: any) {
   terminal.appendChild(div);
 }
 
-export function speakText(text: string) {
-  if ("speechSynthesis" in window) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "bn-BD";
-    speechSynthesis.speak(utterance);
-  } else {
-    alert(
-      "Text-to-speech not supported in your browser. Please use a different browser."
-    );
-  }
-}
-
 clearTerminal.addEventListener("click", () => {
   terminal.innerHTML = "";
 });
