@@ -119,11 +119,3 @@ body {
   left: 90%;
   top: 10%;
 }
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #555; 
-}
