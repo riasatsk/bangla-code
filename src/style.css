@@ -35,7 +35,7 @@ body {
       color: aqua;
       padding: 4px;
       &:hover {
-     scale: 1.1;
+        scale: 1.1;
       }
     }
   }
@@ -125,5 +125,42 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #555; 
+  background-color: #555;
+}
+
+@media only screen and (max-width: 767px) {
+  #main {
+    flex-direction: column;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  #editor-container {
+    width: 100vw;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #terminal {
+    height: 35vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  #editor {
+    height: 50vh;
+    width: 100vw;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  #clearTerminal {
+    left: 75%;
+    top: 70%;
+  }
 }
