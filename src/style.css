@@ -60,10 +60,11 @@ body {
   width: 50vw;
   height: 92vh;
   background-color: black;
-  color: white;
+  color: lime;
   padding: 1rem;
   font-family: "Courier New", monospace;
   overflow: scroll;
+  font-size: large;
 }
 #editor {
   width: 48vw;
@@ -75,6 +76,7 @@ body {
   white-space: pre-wrap;
   outline: none;
   padding: 10px;
+  caret-color: aqua;
 }
 
 #run {
@@ -116,4 +118,21 @@ body {
   z-index: 10;
   left: 90%;
   top: 10%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 2px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #888;
 }
