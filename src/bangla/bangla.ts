@@ -17,7 +17,6 @@ function বলো(str) {
 function speakText(text) {
   if ("speechSynthesis" in window) {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "bn-BD";
     speechSynthesis.speak(utterance);
   } else {
     alert(
