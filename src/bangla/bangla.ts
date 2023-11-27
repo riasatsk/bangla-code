@@ -27,8 +27,11 @@ function speakText(text) {
 function ইনপুট(str) {
   return prompt(str);
 }
-
+function রান্ডম(Max) {
+  return Math.ceil(Math.random() * Max);
+}
  `
   );
   main();
 }
+
